@@ -6,17 +6,7 @@ function Card() {
     function a(t, a) {
         function e(e) {
             if (json = _parseServerResp(e.response)) {
-
-                console.log("json = " + JSON.stringify(json));
-                console.log("pos = " + a);
-                console.log("getOpCards = " + JSON.stringify(getOpCards()));
-
                 if ("500" == json.status) return isEvH && actIfStale(2), void 0;
-
-                console.log("getOpCards = " + JSON.stringify(getOpCards()));
-                console.log("pic = " + r + getOpCards()[a].pic + i);
-
-
                 getOpCards()[a] || (getOpCards()[a] = {
                     pic:json.pic
                 }), n(t, r + getOpCards()[a].pic + i), c = !0;
