@@ -16,7 +16,7 @@ function Page(t) {
     }
     function e() {
         o.opCards = new Array(10), $("div[data-isopen='1']").each(function() {
-            var t = _getPos($(this).get(0)), n = $(this).css("background-image").match(/\/(\w{2,4})\./)[1];
+            var t = _getPos($(this).get(0)), n = $(this).css("background-image").match(/\/(\w{2,4})\.(?:gif|png|jpg|jpeg)/)[1];
             o.opCards[t] = {
                 pic:n
             };
